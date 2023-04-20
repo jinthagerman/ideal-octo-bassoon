@@ -4,6 +4,9 @@ on:
   workflow_dispatch:
   pull_request:
   push:
+  
+env:
+  TEST_VAR: "Yo"
 
 jobs:
   build:
