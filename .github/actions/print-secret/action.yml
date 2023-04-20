@@ -1,0 +1,12 @@
+name: 'Print scret'
+description: 'Print secret'
+inputs:
+  secret:
+    description: 'secret to print'
+    required: true
+    default: ${{ secrets.TEST_SECRET }}
+runs:
+  using: "composite"
+  steps:
+    - run: echo Print secret ${{ inputs.secret }}.
+      shell: bash
