@@ -4,7 +4,7 @@ inputs:
   secret:
     description: 'secret to print'
     required: true
-    default: ${{ secrets.TEST_TOKEN }}
+    default: ${{ env.TEST_VAR }}
 runs:
   using: "composite"
   steps:
