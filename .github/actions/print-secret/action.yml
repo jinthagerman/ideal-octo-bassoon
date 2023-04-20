@@ -4,7 +4,7 @@ inputs:
   secret:
     description: 'secret to print'
     required: true
-    default: ${{ secrets.TEST_SECRET }}
+    default: ${{ github.token }}
 runs:
   using: "composite"
   steps:
