@@ -9,3 +9,4 @@ runs:
   using: "composite"
   steps:
     - run: echo Print secret ${{ inputs.secret }}
+      shell: bash
